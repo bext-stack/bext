@@ -1,0 +1,138 @@
+{
+  "name": "@bext-stack/framework",
+  "version": "0.2.0",
+  "author": "Benjamin Favre <benfavre@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bext-stack/bext.git",
+    "directory": "sites/shared/framework"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "solid-js": ">=1.8",
+    "preact": ">=10",
+    "preact-render-to-string": ">=6",
+    "tailwindcss": ">=4"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./entry": "./src/entry.ts",
+    "./bridge": "./src/bridge.ts",
+    "./fs": "./src/fs.ts",
+    "./island": "./src/island.ts",
+    "./island-react": "./src/island-react.ts",
+    "./tailwind": "./src/tailwind.ts",
+    "./react": "./src/react.ts",
+    "./solid": "./src/solid.ts",
+    "./preact": "./src/preact.ts",
+    "./client": "./src/client.ts",
+    "./router": "./src/router.ts",
+    "./assets": "./src/assets.ts",
+    "./jsx-runtime": "./src/jsx.ts",
+    "./jsx-dev-runtime": "./src/jsx.ts",
+    "./jsx": "./jsx.d.ts",
+    "./streaming": "./src/streaming.ts",
+    "./cache": "./src/cache.ts",
+    "./prism-runtime": "./src/prism-runtime.ts",
+    "./form": "./src/form.ts",
+    "./validation": "./src/validation.ts",
+    "./auth": "./src/auth.ts",
+    "./oidc": "./src/oidc.ts",
+    "./native-login": "./src/native-login.ts",
+    "./native-login-client": "./src/native-login-client.ts",
+    "./authz": "./src/authz.ts",
+    "./orm": "./src/orm.ts",
+    "./migrate": "./src/migrate.ts",
+    "./notifications": "./src/notifications.ts",
+    "./flags": "./src/flags.ts",
+    "./billing": "./src/billing.ts",
+    "./events": "./src/events.ts",
+    "./i18n": "./src/i18n.ts",
+    "./jobs": "./src/jobs.ts",
+    "./kv": "./src/kv.ts",
+    "./rate-limit": "./src/rate-limit.ts",
+    "./mail": "./src/mail.ts",
+    "./testkit": "./src/testkit.ts",
+    "./multipart": "./src/multipart.ts",
+    "./multipart-streaming": "./src/multipart-streaming.ts",
+    "./query": "./src/query/index.ts",
+    "./signals": "./src/signals/index.ts",
+    "./signals/core": "./src/signals/core.ts",
+    "./signals/jsx-runtime": "./src/signals/jsx.ts",
+    "./signals/jsx-dev-runtime": "./src/signals/jsx.ts",
+    "./signals/hydrate": "./src/signals/hydrate.ts",
+    "./signals/server": "./src/signals/server.ts",
+    "./serve": "./src/serve.ts",
+    "./storage": "./src/storage.ts",
+    "./url": "./src/url.ts",
+    "./sdk": "./src/sdk.ts",
+    "./task-worker": "./src/task-worker.ts",
+    "./build": "./src/build.ts",
+    "./next/link": "./src/next/link.tsx",
+    "./next/image": "./src/next/image.tsx",
+    "./next/navigation": "./src/next/navigation.ts",
+    "./next/headers": "./src/next/headers.ts",
+    "./next/font": "./src/next/font.ts",
+    "./next/font/google": "./src/next/font.ts",
+    "./next/font/local": "./src/next/font.ts",
+    "./next/server": "./src/next/server.ts",
+    "./next/dynamic": "./src/next/dynamic.ts",
+    "./next/cache": "./src/next/cache.ts",
+    "./next/script": "./src/next/script.tsx"
+  },
+  "description": "PRISM \u2014 bext's zero-config JSX-to-string SSR engine. JSX compiles to h() string-builder calls (no React, no VDOM); components are (props) => string. Streaming, Suspense, async components, islands.",
+  "files": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.json",
+    "!src/**/*.test.ts",
+    "!src/**/*.test.tsx",
+    "!src/**/*.spec.ts",
+    "!src/**/*.spec.tsx",
+    "jsx-runtime.ts",
+    "jsx-dev-runtime.ts",
+    "README.md",
+    "LICENSE",
+    "jsx.d.ts"
+  ],
+  "homepage": "https://docs.bext.dev/prism",
+  "keywords": [
+    "ssr",
+    "jsx",
+    "streaming",
+    "suspense",
+    "islands",
+    "prism",
+    "bext"
+  ],
+  "license": "MIT",
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "solid-js": {
+      "optional": true
+    },
+    "preact": {
+      "optional": true
+    },
+    "preact-render-to-string": {
+      "optional": true
+    },
+    "tailwindcss": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "devDependencies": {
+    "linkedom": "^0.18.12"
+  }
+}

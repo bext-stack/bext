@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "release": "20261004-bext-0.2.10-tsc-0.4.2",
+  "versions": {
+    "bext": "0.2.10",
+    "tsc-rs": "0.4.2",
+    "framework": "0.2.0"
+  },
+  "target": "x86_64-unknown-linux-gnu",
+  "glibc_baseline": "2.31",
+  "archive_sha256": "0b60b3b2e734e4c2f28e5f001c73fa75b73f2a26d2988c378cdd265263bd121a",
+  "sources": {
+    "bext": "8147c89f9dd1d75302b8ac5b2fa7a1d3bd20bb04",
+    "ts-rs": "f881e291fbf75ead0aa316f431c6de692d4bf4d1"
+  },
+  "upstream_sources": {
+    "bext": "9e6500d100927c1c34771555f84c90cc9de994b6",
+    "ts-rs": "dd3730a3e645d28615729af21ca9336a2517c78c"
+  },
+  "features": [
+    "nginx-compat",
+    "tls",
+    "redis",
+    "realtime",
+    "waf",
+    "v8",
+    "react-compiler-oxc",
+    "turbopack",
+    "route-css",
+    "h3-quic",
+    "native-caps",
+    "caldav",
+    "mqtt",
+    "grpc",
+    "automonique-term-ws",
+    "bun-mimalloc"
+  ],
+  "build_smoke": {
+    "ok": true,
+    "checks": [
+      "tsc-rs-emit-and-v8-execution",
+      "prism-tsx",
+      "typescript-import",
+      "api-get",
+      "api-post",
+      "static",
+      "404"
+    ]
+  }
+}

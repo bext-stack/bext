@@ -1,0 +1,44 @@
+{
+  "name": "@bext-stack/cli",
+  "version": "0.2.10",
+  "description": "Bext CLI with the matched PRISM framework and tsc-rs compiler; verifies and caches the portable native engine.",
+  "bin": {
+    "bext": "bin/bext.js"
+  },
+  "files": [
+    "bin",
+    "scripts",
+    "README.md"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js || true"
+  },
+  "keywords": [
+    "bext",
+    "cli",
+    "ssr",
+    "nextjs",
+    "react",
+    "deployment",
+    "waf",
+    "cache",
+    "server"
+  ],
+  "license": "MIT",
+  "homepage": "https://bext.dev/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bext-stack/bext.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/bext-stack/bext/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@bext-stack/framework": "0.2.0",
+    "@bext-stack/tsc-rs": "0.4.2"
+  }
+}
