@@ -3,7 +3,7 @@
 Bext is a self-hosted Rust application engine with embedded V8, routing,
 TLS, caching, and the PRISM server-first TSX framework.
 
-The current public Linux x64 distribution pairs **Bext 0.2.10**, **tsc-rs
+The current public Linux x64 distribution pairs **Bext 0.2.11**, **tsc-rs
 0.4.2**, and **PRISM (`@bext-stack/framework`) 0.2.0**. It requires glibc
 2.31 or newer. The bundle includes the engine, native compiler, and framework
 resources as one immutable release.
@@ -19,14 +19,14 @@ tsc-rs --version
 
 The installer verifies SHA256 before installing to `$XDG_BIN_HOME` or
 `~/.local/bin`. Set `BEXT_INSTALL_DIR` to choose another directory, or
-`BEXT_RELEASE_ID=20261004-bext-0.2.10-tsc-0.4.2` to pin this release.
+`BEXT_RELEASE_ID=20261004-bext-0.2.11-tsc-0.4.2` to pin this release.
 It updates installed tools; deploying them to a running server is a separate
 operation.
 
 For Node.js 18+ on Linux x64:
 
 ```sh
-npm install -g @bext-stack/cli@0.2.10
+npm install -g @bext-stack/cli@0.2.11
 bext --version
 ```
 
@@ -41,7 +41,7 @@ npx tsc-rs --version
 
 ## Downloads and documentation
 
-- [Bext 0.2.10 release and checksums](https://github.com/bext-stack/bext/releases/tag/v0.2.10)
+- [Bext 0.2.11 release and checksums](https://github.com/bext-stack/bext/releases/tag/v0.2.11)
 - [Stable release manifest](https://get.bext.dev/latest.json)
 - [Installation guide](https://docs.bext.dev/getting-started/installation)
 - [PRISM quickstart](https://docs.bext.dev/getting-started/quickstart)
@@ -59,7 +59,7 @@ release artifacts, issues, and the source distributed in the npm packages:
 
 - [`sites/shared/framework`](sites/shared/framework) — PRISM framework 0.2.0,
   including its runtime modules and JSX declarations.
-- [`packages/cli`](packages/cli) — Bext CLI 0.2.10 with checksum verification
+- [`packages/cli`](packages/cli) — Bext CLI 0.2.11 with checksum verification
   and exact compiler/framework dependencies.
 - [`scripts/install.sh`](scripts/install.sh) — matched release installer.
 

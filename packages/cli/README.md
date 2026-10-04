@@ -5,7 +5,7 @@ Install the Bext engine with its matching PRISM framework and TypeScript compile
 ```sh
 npm install -g @bext-stack/cli
 bext --version
-bext run ./my-site
+bext dev ./my-site
 ```
 
 `npx @bext-stack/cli --help` and `bunx @bext-stack/cli --help` also work.
@@ -14,7 +14,7 @@ The first invocation downloads the versioned Linux x64 engine from
 `~/.cache/bext-stack-cli/<version>/`. Subsequent invocations reuse that file.
 An npm postinstall hook prefetches it when package scripts are enabled.
 
-Bext 0.2.10 is paired with `@bext-stack/framework` 0.2.0 and
+Bext 0.2.11 is paired with `@bext-stack/framework` 0.2.0 and
 `@bext-stack/tsc-rs` 0.4.2 through exact npm dependencies. The CLI sets their
 runtime paths when it invokes the engine. This release supports Linux x64
 with glibc 2.31 or newer; other builds are listed on the
@@ -30,3 +30,5 @@ Overrides:
 [Documentation](https://docs.bext.dev/) · [Releases](https://github.com/bext-stack/bext/releases)
 
 MIT.
+
+Bext 0.2.11 fixes standalone PRISM route discovery and automatically reloads added, edited, and removed routes during development.

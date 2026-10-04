@@ -1,6 +1,6 @@
 {
   "name": "@bext-stack/cli",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "Bext CLI with the matched PRISM framework and tsc-rs compiler; verifies and caches the portable native engine.",
   "bin": {
     "bext": "bin/bext.js"
