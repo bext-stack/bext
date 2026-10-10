@@ -23,7 +23,7 @@ browse the published crates on [crates.io](https://crates.io/search?q=bext-).
 
 This layout exists because bext includes commercial code (`bext-license`,
 `bext-keygen`, and activ-2 deployment config) that can't live in a public
-repo. The BSL 1.1 and MIT crates you see on crates.io are the publishable
+repo. The AGPL-3.0 and MIT crates you see on crates.io are the publishable
 subset. See [LICENSE](LICENSE) for the split.
 
 ## How to contribute
@@ -90,7 +90,8 @@ against them, but:
 
 Any code contribution to bext must be relicensable by the maintainer. For
 small patches (single-commit-sized) a statement in the issue that you agree
-to MIT / BSL-1.1 relicensing is sufficient.
+to MIT / AGPL-3.0 relicensing (and to commercial licensing of the
+engine) is sufficient.
 
 For larger contributions, you'll be asked to sign a standard CLA before the
 code is integrated. We use a minimal CLA modeled on Apache's — it assigns

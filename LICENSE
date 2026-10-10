@@ -1,32 +1,42 @@
-bext is a multi-crate project. Most of it is MIT-licensed. A small number of
-"product" crates are released under the Business Source License 1.1, which
-automatically converts to MIT on a defined Change Date.
+bext is a multi-crate project. The engine is free software under the GNU
+Affero General Public License v3.0; most of the rest of the repository is
+MIT-licensed. A commercial license is available for the engine as an
+alternative to the AGPL.
 
   MIT (default):
     Applies to every crate and package in this repository EXCEPT those listed
     below. The MIT text appears further down in this file.
 
-  Business Source License 1.1:
-    Applies to the following crates. Each crate ships its own LICENSE.md
-    with the full BSL 1.1 text and parameters:
+  GNU Affero General Public License v3.0 only (AGPL-3.0-only):
+    Applies to the following engine crates. Each crate ships its own
+    LICENSE.md; the full AGPL-3.0 text is in LICENSE-AGPL-3.0 at the root of
+    this repository and at https://www.gnu.org/licenses/agpl-3.0.txt.
 
-      Commercial engine (the core runtime — the crown jewels):
-        - crates/bext-core     (routing, SSR, caching, flow engine)
-        - crates/bext-plugin   (plugin orchestration and lifecycle)
-        - crates/bext-v8       (V8 SSR eval engine)
-        - crates/bext-server   (HTTP server runtime and vhost dispatcher)
-
-      Commercial "product" crates (standalone sellable surface):
+        - crates/bext-core         (routing, SSR, caching, flow engine)
+        - crates/bext-plugin       (plugin orchestration and lifecycle)
+        - crates/bext-v8           (V8 SSR eval engine)
+        - crates/bext-server       (HTTP server runtime and vhost dispatcher)
+        - crates/bext-proxy        (reverse-proxy subsystem of bext-server)
         - crates/bext-waf          (web application firewall)
         - crates/bext-tls          (TLS termination and ACME)
         - crates/bext-nginx-compat (nginx config parser, drop-in replacement)
         - crates/bext-nginx-shim   (nginx CLI translator)
+        - crates/bext-lite         (minimal QuickJS runtime for AOT-exported PRISM apps)
+        - crates/bext-lite-desktop (desktop shell for bext-lite)
 
-    Change Date:    2030-04-11
-    Change License: MIT License
-    Additional Use Grant: production use is permitted, except that you may
-    not offer the Licensed Work as a hosted or managed service that provides
-    third parties with access to a substantial set of its features.
+    In short: you may run, study, modify and redistribute these crates. If
+    you distribute them, or let users interact with a modified version over a
+    network, you must offer those users the corresponding source code of your
+    version under the AGPL-3.0. Applications served by the engine are not
+    covered by this requirement merely because the engine serves them.
+
+  Commercial license:
+    The copyright holder offers the engine crates under a separate commercial
+    license for uses that cannot meet the AGPL-3.0 conditions, such as
+    embedding the engine in a closed-source product or offering a modified
+    engine as a hosted service without publishing the changes. See
+    https://bext.dev/partners or open an issue at
+    https://github.com/bext-stack/bext/issues.
 
   Closed source:
     The following crates are NOT distributed under any public license and
